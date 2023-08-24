@@ -21,6 +21,7 @@
 		827997F72A9631A60081EB3C /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827997F62A9631A60081EB3C /* DetailPresenter.swift */; };
 		827997FA2A976E900081EB3C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827997F82A976E900081EB3C /* DetailViewController.swift */; };
 		827997FB2A976E910081EB3C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827997F92A976E900081EB3C /* DetailViewController.xib */; };
+		827997FD2A9778A30081EB3C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827997FC2A9778A30081EB3C /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		827997F62A9631A60081EB3C /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		827997F82A976E900081EB3C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		827997F92A976E900081EB3C /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		827997FC2A9778A30081EB3C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				827997ED2A94FB060081EB3C /* ModuleBuilder.swift */,
+				827997FC2A9778A30081EB3C /* Router.swift */,
 				827997F22A9630ED0081EB3C /* DetailModule */,
 				827997EF2A950D0D0081EB3C /* ServiceLayer */,
 				827997E92A94F9F30081EB3C /* MainModule */,
@@ -238,6 +241,7 @@
 			files = (
 				827997FA2A976E900081EB3C /* DetailViewController.swift in Sources */,
 				827997CE2A94E62B0081EB3C /* AppDelegate.swift in Sources */,
+				827997FD2A9778A30081EB3C /* Router.swift in Sources */,
 				827997E22A94E7B50081EB3C /* Comment.swift in Sources */,
 				827997D02A94E62B0081EB3C /* SceneDelegate.swift in Sources */,
 				827997F72A9631A60081EB3C /* DetailPresenter.swift in Sources */,

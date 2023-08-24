@@ -19,7 +19,10 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func didTappedButton(_ sender: Any) {
+        presenter.tap()
+    }
+    
 }
 extension DetailViewController: DetailViewProtocol {
     func setComment(comment: Comment?) {
