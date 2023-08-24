@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.dataSource = self
+        tableView.delegate = self
         // Do any additional setup after loading the view.
     }
 }
@@ -38,6 +39,14 @@ extension MainViewController: UITableViewDataSource {
 
 }
 
+
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let comment = presenter.comments?[indexPath.row]
+        let detailViewController = ModelBuilder.createDetailModule(comment: comment)
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
+}
 
 extension MainViewController: MainViewProtocol {
     func success() {
